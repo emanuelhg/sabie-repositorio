@@ -12,6 +12,7 @@
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <title>SaBie - Salud y Bienestar</title>
   <link rel="icon" href="./media/favicon.ico" type="image/gif" sizes="16x16">  
 </head>
@@ -43,42 +44,10 @@
       </ul>
     </div>
   </nav>
-  <section>
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active" style="background-image: url('media/actividad-min.jpg')">
-          <div class="carousel-caption d-md-block">
-            <img src="./media/Logo.png" class="img-fluid LogoBlanco" alt="Responsive image">
-            <h2 class="display-4 carouselTitulo">SaBie</h2>
-            <p class="lead carouselDescripcion">Bienvenidos a Salud y Bienestar!</p>
-          </div>
-        </div>
-        <div class="carousel-item" style="background-image: url('media/deportes-min.jpg')">
-          <div class="carousel-caption d-md-block">
-            <h2 class="display-4 carouselTitulo">Productos</h2>
-            <p class="lead carouselDescripcion">A través de nuestra tienda online ofrecemos suplementos deportivos,
-              nutricionales y de control de peso.</p>
-          </div>
-        </div>
-        <div class="carousel-item" style="background-image: url('media/bienestar-min.jpg')">
-          <div class="carousel-caption d-md-block">
-            <h2 class="display-4 carouselTitulo">Calidad</h2>
-            <p class="lead carouselDescripcion">Garantizamos productos de alta calidad y brindamos atención de manera
-              continua.</p>
-          </div>
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      </a>
+  <section class="container noEncontrado">
+    <div class="text-center">
+      <img class="imagenNoencontrado" data-aos="zoom-in-up" src="./media/logo_404.png">
+      <p class="textoNoencontrado">El sitio que buscas actualmente no se encuentra disponible, por favor utiliza el menú para volver a otra sección.</p>
     </div>
   </section>
   <footer>
@@ -104,6 +73,12 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
   </script>
-</body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    $(function () {
+      AOS.init();
+    });
+  </script>
+  </body>
 
 </html>

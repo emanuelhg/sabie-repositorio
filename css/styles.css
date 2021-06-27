@@ -429,6 +429,21 @@ div.row.text-center.bg-light {
   filter: drop-shadow(1px 1px #44c77f);
 }
 
+/* 404 */
+
+.noEncontrado {
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+  overflow: hidden; }
+
+.imagenNoencontrado {
+  max-width: 100%; }
+
+.textoNoencontrado {
+  font-size: 1.5rem;
+  color: #639fe2;
+}
+
 /* Keyframes */
 
 /*Gral */
