@@ -1,0 +1,83 @@
+[{
+        "id": 1,
+        "marca": "Ena",
+        "producto": "Suplemento Dietario Ena Enargy Gel Sabor a Frutilla x 6 un x 32 g",
+        "precio": 323.4,
+        "categoria": "Suplementos deportivos",
+        "tipo": "primary",
+        "cantidad": 1
+
+    },
+    {
+        "id": 2,
+        "marca": "Ena",
+        "producto": "Suplemento Dietario amino 4500 x 150 un",
+        "precio": 861.38,
+        "categoria": "Suplementos deportivos",
+        "tipo": "primary",
+        "cantidad": 1
+    },
+    {
+        "id": 3,
+        "marca": "Ena",
+        "producto": "Suplemento Dietario Protein Bar 32% proteína Lemon Pie x 46 gr",
+        "precio": 115.5,
+        "categoria": "Suplementos deportivos",
+        "tipo": "primary",
+        "cantidad": 1
+    },
+    {
+        "id": 4,
+        "marca": "Satial",
+        "producto": "Suplemento Dietario Satial Food x 12 un",
+        "precio": 560.7,
+        "categoria": "Control de peso",
+        "tipo": "warning",
+        "cantidad": 1
+    },
+    {
+        "id": 5,
+        "marca": "Keto",
+        "producto": "Suplemento Dietario Keto MCT x 300 ml x 2 un",
+        "precio": 2450.8,
+        "categoria": "Control de peso",
+        "tipo": "warning",
+        "cantidad": 1
+    },
+    {
+        "id": 6,
+        "marca": "Pure Wellness",
+        "producto": "Suplemento Dietario Pure Wellnes Café Verde x 60 cápsulas",
+        "precio": 850.35,
+        "categoria": "Control de peso",
+        "tipo": "warning",
+        "cantidad": 1
+    },
+    {
+        "id": 7,
+        "marca": "Fortisip",
+        "producto": "Suplemento Nutricional bebible chocolate x 200 ml",
+        "precio": 306.56,
+        "categoria": "Suplementos nutricionales",
+        "tipo": "danger",
+        "cantidad": 1
+    },
+    {
+        "id": 8,
+        "marca": "Pedialyte",
+        "producto": "Formula de rehidratación oral Pedialyte sabor manzana x 500 ml",
+        "precio": 299.5,
+        "categoria": "Suplementos nutricionales",
+        "tipo": "danger",
+        "cantidad": 1
+    },
+    {
+        "id": 9,
+        "marca": "Ensure",
+        "producto": "Suplemento Nutricional bebible Ensure Plus Drink sabor chocolate x 237 ml",
+        "precio": 400.65,
+        "categoria": "Suplementos nutricionales",
+        "tipo": "danger",
+        "cantidad": 1
+    }
+]

@@ -1,0 +1,649 @@
+@charset "UTF-8";
+
+/* Generales */
+
+body {
+  background-image: url("../media/fondo_site-min.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  font-family: 'Montserrat', sans-serif;
+  overflow: auto !important;
+  padding-right: 0 !important;
+}
+
+.modal-open {
+  overflow: auto !important;
+  padding-right: 0 !important;
+}
+
+.LogoBlanco {
+  height: 6rem;
+  filter: drop-shadow(1px 1px 1px black)
+}
+
+.titulosSeccion {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  -webkit-animation: titulosSeccion 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.7s both;
+  animation: titulosSeccion 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.7s both;
+}
+
+
+.animaEntrada {
+  -webkit-animation: animaEntrada 1.1s both;
+  animation: animaEntrada 1.1s both;
+}
+
+
+.comentarioSeccion {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+
+/* Nav del sitio */
+
+.navbar-light .navbar-brand {
+  color: #639fe2;
+}
+
+.navbar-light .navbar-brand:hover {
+  color: #639fe2;
+  transition-duration: 0.5s;
+  transform: scale(1.05);
+}
+
+a.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+#colorBie {
+  color: #44c77f;
+}
+
+div#collapsibleNavbar.collapse.navbar-collapse {
+  flex-direction: row-reverse;
+  margin-right: 20px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #44c77f;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+.active {
+  color: #639fe2 !important;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #639fe2;
+  transition-duration: 0.25s;
+  transform: scale(1.05);
+}
+
+/* Index */
+
+.carousel-item {
+  height: 600px;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  transition: background-position 0.5s;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+.carousel-caption {
+  transform: translateY(-50%);
+  top: 50%;
+  bottom: 0;
+}
+
+.carouselTitulo {
+  font-size: 3.75rem;
+  text-shadow: 1px 1px 1px black;
+}
+
+.carouselDescripcion {
+  text-shadow: 1px 1px 2px black;
+}
+
+span.carousel-control-next-icon {
+  width: 30px;
+  height: 30px;
+}
+
+span.carousel-control-prev-icon {
+  width: 30px;
+  height: 30px;
+}
+
+/* Nosotros */
+
+.nosotrosContenedor {
+  display: flex;
+  justify-content: center;
+}
+
+.fotoNosotros {
+  max-width: 200px;
+}
+
+.nosotrosFrente {
+  position: absolute;
+  z-index: 20;
+  transform: perspective(0px) rotateY(0deg);
+  transition: all 500ms;
+  overflow: hidden;
+}
+
+.nosotrosDorso {
+  position: absolute;
+  z-index: 10;
+  backface-visibility: visible;
+  transform: perspective(0px) rotateY(180deg);
+  transition: all 500ms;
+  overflow: hidden;
+}
+
+.nosotrosContenedor:hover .nosotrosFrente {
+  z-index: 10;
+  backface-visibility: visible;
+  transform: perspective(0px) rotateY(180deg);
+  overflow: hidden;
+}
+
+.nosotrosContenedor:hover .nosotrosDorso {
+  z-index: 20;
+  backface-visibility: visible;
+  transform: perspective(0px) rotateY(360deg);
+  overflow: hidden;
+}
+
+.nombreNosotros {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #3d9b68;
+}
+
+.cargoNosotros {
+  font-size: 1.25rem;
+  color: #ff6c35;
+}
+
+.resenaNosotros {
+
+  color: #347bca;
+}
+
+.marcoNosotros {
+  padding: 0.5rem;
+  background-color: rgba(117, 130, 122, 0.1);
+  border-radius: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.videoSabie {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+
+.misionVisionValores {
+  padding-bottom: 2rem;
+}
+
+.nosotrosDetalle {
+  overflow: hidden;
+}
+
+.logoMVV {
+  color: #3d9b68;
+  padding: 1rem;
+}
+
+.titulosNosotros {
+  color: #ff6c35;
+}
+
+.textoMVV {
+  font-size: 1.5rem;
+  color: #347bca;
+}
+
+
+/* Sección Productos*/
+
+#nombreUsuario {
+  font-size: 0.875rem;
+}
+
+.productos {
+  margin-bottom: 2rem;
+}
+
+.carritoOut {
+  margin-bottom: 2rem;
+}
+
+.usuarioLogged {
+  margin-bottom: 1.5rem;
+  margin-right: 1rem;
+}
+
+.btnSesion {
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+}
+
+.btn-custom {
+  border-bottom: 2px solid #285e8e;
+  position: relative;
+}
+
+.btn-custom:hover {
+  top: 1px;
+}
+
+
+.tituloCarrito {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.divDetalle {
+  font-size: 1rem;
+  font-style: italic;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.filtrarProductos {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.listaFiltro:hover {
+  cursor: pointer;
+}
+
+.card {
+  border-radius: 0.75rem;
+}
+
+.contenedorCard {
+  padding-top: 1.5rem;
+}
+
+.card-img-top {
+  height: 18rem;
+  padding: 1rem;
+}
+
+.card-header {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.cantidadProdStyle {
+  width: 48px;
+  height: 30px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.card-footer {
+  text-align: center;
+  color: #639fe2;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.imagenProducto {
+  position: relative;
+  width: 100%;
+}
+
+.contadorCarritoBottom {
+  font-size: 0.875rem;
+}
+
+.btncontadorCarrito {
+  opacity: 100% !important;
+  border-style: none;
+}
+
+.badgeBottom {
+  position: relative;
+  left: -35%;
+}
+
+.iconCarrito {
+  position: relative;
+  left: 15%;
+}
+
+
+.catProducto {
+  position: absolute;
+  font-size: 1.25rem;
+  color: white;
+  text-align: center;
+  top: 144px;
+  left: -160px;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  width: 100%;
+}
+
+.txtCheck {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mediosPago {
+  margin-bottom: 1rem;
+}
+
+/* Sección Contacto */
+
+.contenidoContacto {
+  padding-bottom: 2rem;
+}
+
+.logoContacto {
+  color: #639fe2;
+  margin-bottom: 1rem;
+}
+
+.datosContacto {
+  font-weight: bold;
+}
+
+.mapaOficina {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.mapaOficina iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.subContacto {
+  color: #639fe2;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.formContacto {
+  padding-top: 0.5rem;
+}
+
+.formTel {
+  -moz-appearance: textfield;
+}
+
+.btnFormContacto {
+  margin-top: 1.75rem;
+}
+
+/* Footer */
+
+div.row.text-center.bg-light {
+  margin: 0px;
+}
+
+.footerDatos p {
+  font-size: 0.875rem;
+  margin: 1rem;
+  color: #639fe2;
+}
+
+.footerRedes {
+  margin-bottom: 1rem;
+  display: flex;
+  align-self: center;
+  justify-content: space-evenly;
+}
+
+.iconoSocial:hover {
+  filter: drop-shadow(1px 1px #44c77f);
+}
+
+/* Keyframes */
+
+/*Gral */
+
+@-webkit-keyframes animaEntrada {
+  0% {
+    -webkit-transform: translateY(-500px);
+    transform: translateY(-500px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  38% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+
+  55% {
+    -webkit-transform: translateY(-65px);
+    transform: translateY(-65px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  72% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  81% {
+    -webkit-transform: translateY(-28px);
+    transform: translateY(-28px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  90% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  95% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+
+@keyframes animaEntrada {
+  0% {
+    -webkit-transform: translateY(-500px);
+    transform: translateY(-500px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  38% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+
+  55% {
+    -webkit-transform: translateY(-65px);
+    transform: translateY(-65px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  72% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  81% {
+    -webkit-transform: translateY(-28px);
+    transform: translateY(-28px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  90% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  95% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+
+
+@-webkit-keyframes titulosSeccion {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0.6;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes titulosSeccion {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0.6;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/* Mobile */
+@media only screen and (max-width: 768px) {
+
+  /* Generales */
+  
+  body {
+    background-image: linear-gradient(to bottom, #ffffff, #ecf1f6, #d2e4e9, #bdd8d2, #b5c9b5);
+  }
+
+  .nav-link {
+    margin-left: 0.5rem;
+  }
+
+  /* Nosotros*/
+  .nosotrosFrente {
+    position: inherit;
+    overflow: hidden;
+  }
+
+  .nombreNosotros {
+    text-align: center;
+  }
+
+  .cargoNosotros {
+    text-align: center;
+  }
+
+  .resenaNosotros {
+    text-align: center;
+  }
+
+  .videoSabie {
+    width: 380px;
+    height: 214px;
+  }
+
+  /* Index */
+
+  .carouselTitulo {
+    font-size: 3rem;
+  }
+
+  /* Productos */
+  .usuarioLogged {
+    text-align: center !important;
+    margin-right: 0px;
+  }
+
+  .imgTabla {
+    display: none;
+  }
+
+  .btnSesion {
+    text-align: center !important;
+    margin-right: 0rem;
+  }
+
+  .btnFinalizar {
+    margin-bottom: 1rem;
+  }
+
+}
